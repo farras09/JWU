@@ -1,0 +1,108 @@
+@media (max-width: 1024px){
+    .journal-card .text{
+        -webkit-line-clamp: 2;
+    }
+    .journal-list li .text span{
+        -webkit-line-clamp: 3;
+    }
+    .banner{
+        background-position-y: center;
+    }
+}
+@media (max-width: 768px){
+    .hidden-in-mobile{
+        display: none !important;
+    }
+    .content{
+        padding-top: 30px;
+    }
+    .brand-logo{
+        margin-top: 0;
+    }
+    a.to-top{
+        right: 20px;
+    }
+    .card .catalog-box{
+        height: 20vh;
+    }
+    .catalog-box .text span{
+        -webkit-line-clamp: 1;
+    }
+    .catalog-box .cover{
+        width: 80%;
+    }
+    .col-sm-4 .catalog-box .cover{
+        display: none;
+    }
+    .catalog-box .text #catalog-action .d-flex a.jwu-btn{
+        font-size: 1rem;
+        padding: 8px 10px;
+        text-align: center;
+        left: 0;
+        width: 100px;
+        height: 5vh;
+    }
+    .nav{
+        margin-bottom: 20px;
+    }
+    .manageaccount{
+        left: 5%;
+    }
+    .searchform{
+        margin-top: 40px;
+    }
+    .userimg{
+        position: relative;
+        left: 120px;
+        margin-bottom: 20px;
+    }
+    .userbtn .jwu-btn{
+        width: 100%;
+    }
+}
+@media (min-width: 769px){
+    .hidden-in-desktop{
+        display: none !important;
+    }
+}
+@media (max-width: 575px){
+    .card .section-title .jwu-btn{
+        width: 100px;
+    }
+}
+@media (max-width: 425px){
+    .brand-logo{
+        display: block;
+        height: auto;
+        margin-top: 0;
+        padding-right: 0;
+        text-align: center;
+        border: none;
+    }
+    .brand-logo img {
+        height: 120px;
+        width: auto;
+        border-radius: 100%;
+    }
+    .brand-logo .logo-txt{
+        margin-top: 24px;
+        margin-left: 0;
+    }
+}
+@media (max-width: 320px){
+    .sidebar.active{
+        width: 288px;
+    }
+    .sidebar .wrapper{
+        width: 288px;
+    }
+    .banner{
+        height: 200px;
+    }
+    .brand-logo img{
+        height: 100px;
+    }
+    .brand-logo .logo-txt{
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,10 @@
+$(document).ready(function(){
+    $('.toast-close').click(function(){
+        $('.jwu-toast').removeClass('fadeInDown');
+        $('.jwu-toast').addClass('fadeOutUp');
+    });
+    setTimeout(function(){
+        $('.jwu-toast').removeClass('fadeInDown');
+        $('.jwu-toast').addClass('fadeOutUp');
+    },5000);
+});

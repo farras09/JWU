@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal Wawasan Universal * Website Link Publishing</title>
+
+    <link rel="stylesheet" href="../plugins/bootstrap-4.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugins/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../style/responsive.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="overlay">
+        <div class="overlay-child"></div>
+    </div>
+    <div class="toast jwu-toast animated fadeInDown" style="position: fixed; top: 0; right: 0; z-index: 3;">
+      <div class="toast-header">
+        <i class="material-icons mr-2">notifications_active</i>
+        <strong class="mr-auto">New Notification</strong>
+        <small class="ml-3">Just now</small>
+        <a href="#!" class="ml-2 mb-1 toast-close">
+          <i class="material-icons">close</i>
+        </a>
+      </div>
+      <div class="toast-body">
+        You've got 123 notifications, <a href="javascript:sidebarToggle('notif')">check it now</a>
+      </div>
+    </div>
+    <nav class="jwu-navbar fixed">
+        <div class="container-fluid">
+            <div class="row" style="height: 100%;">
+                <button class="d-sidebar-toggler ripple-effect dark-ripple" onclick="dSidebarToggle()">
+                    <i class="material-icons">menu</i>
+                </button>
+                <div class="col-8 col-sm-3 ml-5 pl-4 pl-sm-5">
+                    <a href="#" class="brand-logo">
+                        <img src="../assets/logo 1.png" alt="logo">
+                        <div class="logo-txt">
+                            <span>
+                                Journal Wawasan Universal
+                            </span>
+                            <span>
+                                Website Link Publishing
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-2 col-sm-8 d-flex align-items-center justify-content-end ml-xl-5 pl-xl-5">
+                    <div class="user-info hidden-in-mobile">
+                        <a data-toggle="collapse" href="#navbarUserCollapse" class="ripple-effect light-ripple">
+                            <div class="user-img">
+                                <img src="../assets/logo.png" alt="user-image">
+                            </div>
+                            <div class="d-block">
+                                <span class="user-greet">Good Morning,</span>
+                                <span class="user-name">Mr. John</span>
+                            </div>
+                            <div class="stat-bar">
+                                <div class="on-shape on"></div>
+                                <span class="user-stat">Online</span>
+                            </div>
+                        </a>
+                        <div class="collapse" id="navbarUserCollapse">
+                            <ul class="dropdown-list">
+                                <li>
+                                    <a class="menus ripple-effect light-ripple" href="#">
+                                        <span>Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="menus ripple-effect light-ripple" href="#">
+                                        <span>Logout</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="menus ripple-effect light-ripple" href="#">
+                                        <span>Logoff</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="notif">
+                        <a href="javascript:sidebarToggle('notif')" class="jwu-btn flat ripple-effect dark-ripple ml-4">
+                            <i class="material-icons menu-icon">notifications</i>
+                        </a>
+                        <span class="notif-badge">99+</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <aside class="d-sidebar">
+        <ul class="menu-list">
+            <li class="user-info hidden-in-desktop">
+                <a data-toggle="collapse" href="#sidebarUserCollapse" class="ripple-effect light-ripple">
+                    <div class="user-img">
+                        <img src="../assets/logo.png" alt="user-image">
+                    </div>
+                    <div class="d-block">
+                        <span class="user-greet">Good Morning,</span>
+                        <span class="user-name">Mr. John</span>
+                    </div>
+                    <div class="stat-bar">
+                        <div class="on-shape on"></div>
+                        <span class="user-stat">Online</span>
+                    </div>
+                </a>
+                <div class="collapse" id="sidebarUserCollapse">
+                    <ul class="dropdown-list">
+                        <li>
+                            <a class="menus ripple-effect light-ripple" href="#">
+                                <span>Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menus ripple-effect light-ripple" href="#">
+                                <span>Logout</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menus ripple-effect light-ripple" href="#">
+                                <span>Logoff</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <div class="my-0 my-lg-4">
+            <li>
+                <a class="menus ripple-effect dark-ripple" href="#">
+                    <i class="material-icons menu-icon">dashboard</i>
+                    <span class="ml-4">Dashboard</span>
+                </a>
+            </li>
+            <li class="active">
+                <a class="menus ripple-effect dark-ripple" data-toggle="collapse" href="#menuJournalsCollapse">
+                    <i class="material-icons menu-icon">archive</i>
+                    <span class="ml-4">Journals</span>
+                </a>
+                <div class="collapse" id="menuJournalsCollapse">
+                    <ul class="submenu-list">
+                        <li>
+                            <a class="menus ripple-effect dark-ripple">
+                                <span class="ml-5">Sub-menu 1</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menus ripple-effect dark-ripple">
+                                <span class="ml-5">Sub-menu 2</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menus ripple-effect dark-ripple">
+                                <span class="ml-5">Sub-menu 3</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menus ripple-effect dark-ripple">
+                                <span class="ml-5">Sub-menu 4</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a class="menus ripple-effect dark-ripple" data-toggle="collapse" href="#menuEbooksCollapse">
+                    <i class="material-icons menu-icon">menu_book</i>
+                    <span class="ml-4">E-Books</span>
+                </a>
+                <div class="collapse" id="menuEbooksCollapse">
+                    <ul class="submenu-list">
+                        <li>
+                            <a class="menus ripple-effect dark-ripple">
+                                <span class="ml-5">Sub-menu 1</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menus ripple-effect dark-ripple">
+                                <span class="ml-5">Sub-menu 2</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menus ripple-effect dark-ripple">
+                                <span class="ml-5">Sub-menu 3</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menus ripple-effect dark-ripple">
+                                <span class="ml-5">Sub-menu 4</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a class="menus ripple-effect dark-ripple" href="#">
+                    <i class="material-icons menu-icon">event</i>
+                    <span class="ml-4">Events</span>
+                </a>
+            </li>
+            </div>
+        </ul>
+    </aside>
+    <div class="d-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card p-4">
+                        <div class="section-title">
+                            <h2>Test</h2>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt eum, voluptates amet, porro saepe earum quod non atque tempore dolor veniam provident voluptas repudiandae odit? Aspernatur natus odio modi sint, hic magni itaque. Maiores, praesentium. Nostrum amet eaque consequatur officiis nesciunt distinctio veniam sed quisquam, deleniti a eum odit fuga optio architecto perspiciatis in incidunt adipisci unde earum quidem provident doloremque assumenda itaque. Suscipit, cum atque! Eos corrupti tempora illum, obcaecati fugiat quod necessitatibus nam voluptates reprehenderit nihil asperiores beatae architecto accusamus non molestiae dolores, animi minus magni minima aut dolore aliquam. Ipsam beatae vel iure, nesciunt repellendus omnis veritatis, quisquam odio, dolore deserunt corrupti quos quae voluptatem sint deleniti rerum voluptatum? Sequi omnis eius dolore nesciunt cum fuga veniam necessitatibus eveniet corrupti sint, nihil debitis error dolores unde quia iste ipsa ad harum doloremque? Labore, itaque et iste impedit hic expedita sint fugiat inventore? Error voluptate molestias voluptatibus. Nam quos at fugiat velit! Dignissimos vitae repudiandae eum voluptas cum dolore consequatur laborum deleniti. Aspernatur quas veritatis hic dolor nobis eos laudantium debitis enim tempora nemo, quos et doloribus itaque repellendus amet facilis a omnis, voluptatibus iure excepturi? In sit enim cumque hic adipisci debitis vitae quasi, magnam mollitia natus tenetur sed commodi sapiente nemo aliquam? Consequuntur excepturi necessitatibus impedit libero sunt ipsam facere nisi, modi culpa provident! Magni repellat, eum architecto similique hic eos modi accusamus quaerat commodi dolores! Odit quaerat excepturi, doloremque ex dolore iure sunt ad magni neque maxime maiores fuga, laboriosam perspiciatis, explicabo voluptatum molestias! Eius eum ex architecto ea atque repudiandae necessitatibus laboriosam hic quidem amet. Voluptatibus vel fuga modi! Facere quia suscipit soluta alias vitae, rem ratione dolorum, distinctio eligendi pariatur rerum architecto numquam laborum perspiciatis totam qui magnam maiores placeat odio consequuntur. Praesentium placeat alias eligendi omnis sunt quia, ad quidem consectetur! Sed necessitatibus odit numquam. Optio odio provident quis nisi quibusdam officiis! Id repudiandae fugiat magni dolore. Facere ratione ullam magni omnis sit, doloribus, molestiae ab totam distinctio eos alias expedita vero, ipsum illo nesciunt sed reiciendis non suscipit tempora officia vitae sunt harum! Nisi quidem nesciunt animi autem error fugiat itaque reprehenderit quae minus labore tempora fugit neque quas eius illum ad, aliquam, esse pariatur veniam ut? Minima assumenda, illo corporis facere eum expedita, voluptatibus at delectus explicabo quas ipsa? Vero dicta ipsam tempora quibusdam necessitatibus veritatis minima saepe distinctio provident, quisquam vitae sit deserunt numquam dolorem aspernatur corporis accusamus at recusandae eius aperiam expedita. Fugiat incidunt corporis minus accusamus. Perferendis voluptates ut veritatis dolores culpa voluptatum sit aliquam deserunt enim aliquid iste sint esse error voluptate optio, quos doloribus sequi velit! Quidem rem officiis ex voluptatum itaque pariatur optio hic temporibus enim molestiae nihil consectetur labore repudiandae repellat magni tempore, dicta cum, dignissimos facilis, recusandae tempora esse corrupti assumenda voluptate. Nulla, quisquam sequi vel dolorem, dolor distinctio quas, iste necessitatibus magnam officiis quaerat? Perspiciatis cupiditate voluptatem ab? Placeat alias iure deserunt sunt necessitatibus laboriosam distinctio explicabo repellendus, asperiores porro, enim reiciendis aperiam? Blanditiis minima dicta debitis eum? Ratione, voluptate est!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar right" id="notif">
+        <div class="wrapper">
+        <button class="close-sidebar" onclick="sidebarClose()">
+            <i class="material-icons">close</i>
+        </button>
+        <div class="title">Notifications</div>
+        <div class="accordion" id="accordionNotif">
+            <a data-toggle="collapse" href="#collapseUnread" class="notif-accordion px-3">Unread</a>
+            <div id="collapseUnread" class="collapse show" data-parent="#accordionNotif">
+                <div class="content-wrapper">
+                    <ul class="notif-list">
+                        <li class="no-notif">
+                            You haven't any notifications
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a data-toggle="collapse" href="#collapseRead" class="notif-accordion px-3">Readed</a>
+            <div id="collapseRead" class="collapse" data-parent="#accordionNotif">
+                <div class="content-wrapper">
+                    <ul class="notif-list">
+                        <li>
+                            <a href="#!" class="px-3">
+                                <div class="user-img">
+                                    <img src="../assets/logo 1.png" alt="user-image">
+                                </div>
+                                <div class="d-block" style="width: calc(100% - 40px - 13px);">
+                                    <p><b>Admin</b>, just posted an <b>announcement</b></p>
+                                    <small>Just now</small>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="px-3">
+                                <div class="user-img">
+                                    <img src="../assets/logo.png" alt="user-image">
+                                </div>
+                                <div class="d-block" style="width: calc(100% - 40px - 13px);">
+                                    <p><b>Ilham</b>, just shared 3 <b>new books</b></p>
+                                    <small>15 mins ago</small>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="../plugins/jquery-3.2.1.min.js"></script>
+    <script src="../plugins/bootstrap-4.3.1/dist/js/bootstrap.min.js"></script>
+    <script src="../js/style.js"></script>
+    <script src="../js/dashboard.js"></script>
+    <script src="../js/toast.js"></script>
+</body>
+</html>

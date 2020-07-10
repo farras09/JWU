@@ -1,0 +1,107 @@
+@media (max-width: 1024px){
+    .journal-card .text{
+        -webkit-line-clamp: 2;
+    }
+    .journal-list li .text span{
+        -webkit-line-clamp: 3;
+    }
+    .banner{
+        background-position-y: center;
+    }
+    .d-content.sidebar-active{
+        margin-left: calc(64px + 13px);
+    }
+}
+@media (max-width: 768px){
+    .hidden-in-mobile{
+        display: none !important;
+    }
+    .content{
+        padding-top: 30px;
+    }
+    .brand-logo{
+        height: 125px;
+    }
+    .brand-logo .logo-txt, 
+    .brand-logo .logo-txt span{
+        font-size: 21px;
+    }
+    a.to-top{
+        right: 20px;
+    }
+    .catalog-box .text span{
+        -webkit-line-clamp: 1;
+    }
+    .catalog-box .cover{
+        width: 35%;
+    }
+    .jwu-btn{
+        display: block;
+        width: 100%;
+    }
+}
+@media (min-width: 769px){
+    .hidden-in-desktop{
+        display: none !important;
+    }
+}
+@media (max-width: 425px){
+    .brand-logo{
+        display: block;
+        height: auto;
+        margin-top: 0;
+        padding-right: 0;
+        text-align: center;
+        border: none;
+    }
+    .brand-logo .logo-bg{
+        display: inline-block;
+        border-radius: 10px;
+        padding: 2px;
+        overflow: hidden;
+    }
+    .brand-logo img {
+        height: 120px;
+        width: auto;
+    }
+    .brand-logo .logo-txt{
+        margin-top: 24px;
+        margin-left: 0;
+    }
+    .brand-logo .logo-txt span{
+        font-size: 16px;
+    }
+
+    .jwu-navbar.fixed .brand-logo img{
+        height: calc(100% - 13px);
+    }
+    .jwu-navbar.fixed .brand-logo .logo-txt{
+        margin-top: 0;
+    }
+    .jwu-navbar.fixed .brand-logo .logo-txt span{
+        font-size: 8px;
+    }
+    .d-sidebar-toggler{
+        width: 50px;
+    }
+}
+@media (max-width: 320px){
+    .sidebar.active{
+        width: 288px;
+    }
+    .sidebar .wrapper{
+        width: 288px;
+    }
+    .banner{
+        height: 200px;
+    }
+    .brand-logo img{
+        height: 100px;
+    }
+    .brand-logo .logo-txt{
+        font-size: 12px;
+    }
+    .login-page .bottom-action{
+        margin-bottom: -14%;
+    }
+}
